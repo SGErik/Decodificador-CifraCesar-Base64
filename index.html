@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[De}codificador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>[De}Codyfier</h1>
+    </header>
+        <main id="container">
+            <div class="btnbox">
+                <h2>Insira aqui seu texto!</h2>
+                <form action="">
+                    <input type="text" class="field" id="texto" placeholder="Escreva Aqui!">
+                    <select name="typecode" id="typecode">
+                        <option value="1">Selecionar</option>
+                        <option value="2">Cifra de César</option>
+                        <option value="3">Base64</option>
+                    </select>
+                    <div class="radio" id="radio1">
+                        <input type="radio" name="code" id="codyfier">Codificar
+                        <input type="radio" name="code" id="decodyfier">Decodificar
+                    </div>
+                    <div id="pass">
+                        <h4> Quantidade de Passos</h4>
+                        <input type="number" name="passos" id="passos">
+                    </div>
+                    <div class='divencoders' id="divencoders1" >
+
+                    </div>
+                    <div id="textarea">
+                        <textarea cols="30" rows="10" readonly id="resulText"></textarea>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+    
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
