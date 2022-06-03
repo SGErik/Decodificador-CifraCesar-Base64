@@ -107,37 +107,6 @@ function codeCesar() {
     txtArea.value = stringValue
 }
 
-// function decodeCesar() {
-//     var texto = document.querySelector('#texto').value
-//     var passinhos = document.querySelector('#passos').value
-//     var stringValue = ""
-//     for (var i = 0; i < texto.length; i++) {
-//         var ascii = texto[i].charCodeAt();
-//         var chave = parseInt(passinhos);
-//         var decode = ascii - chave;
-
-//         if (ascii >= 65 && ascii <= 90) {
-            
-//             if (decode < 65) {
-//                 decode =  decode + 26
-//             }
-//             stringValue += String.fromCharCode(decode)
-
-//         } else if (decode >= 97 && decode <= 122) {
-            
-//             if (decode < 97) {
-//                 decode = 26 + decode
-//             }
-//             stringValue += String.fromCharCode(decode)
-//         } else {
-//             stringValue += texto[i]
-//         }
-
-//     }
-
-//     txtArea.value = stringValue
-// }
-
 function decodeCesar() {
     var texto = document.querySelector('#texto').value
     var passinhos = document.querySelector('#passos').value
@@ -152,7 +121,9 @@ function decodeCesar() {
                 decode = decode + 26
             }
             stringValue += String.fromCharCode(decode)
+
         } else if (ascii >= 97 && ascii <= 122) {
+
             if (decode < 97) {
                 decode = decode + 26
             }
@@ -162,5 +133,33 @@ function decodeCesar() {
         }
 
     }
+
     txtArea.value = stringValue
 }
+
+// function decodeCesar() {
+//     var texto = document.querySelector('#texto').value
+//     var passinhos = document.querySelector('#passos').value
+//     var stringValue = ""
+//     for (var i = 0; i < texto.length; i++) {
+//         var ascii = texto[i].charCodeAt();
+//         var chave = parseInt(passinhos);
+//         var decode = ascii - chave;
+
+//         if (ascii >= 65 && ascii <= 90) {
+//             if (decode < 65) {
+//                 decode = decode + 26
+//             }
+//             stringValue += String.fromCharCode(decode)
+//         } else if (ascii >= 97 && ascii <= 122) {
+//             if (decode < 97) {
+//                 decode = decode + 26
+//             }
+//             stringValue += String.fromCharCode(decode)
+//         } else {
+//             stringValue += texto[i]
+//         }
+
+//     }
+//     txtArea.value = stringValue
+// }
